@@ -23,6 +23,6 @@ Simply fork the repo, and interactively go through this list checking off as you
 - [ ] Deploy another VM. On this VM, set up a syslog daemon to listen to every other server's input. Reconfigure each other server to send their logging output to various files on the syslog server. (For extra credit, set up logstash or kibana or greylog to parse those logs.)
 - [ ] Document every last step you did in getting to this point in your brand new Wiki.
 - [ ] Now go back and setup Ansible Tower to ensure that every last one of these machines is authenticating to the LDAP servers, registered to the Foreman-Katello server, and backed up by the bakula server.
-- [ ] Now go back, reference your documents, and set up a Puppet Razor profile that hooks into each of these things to allow you to recreate, from scratch, each individual server.
+- [ ] Now go back, reference your documents, and set up a Ansible profile that hooks into each of these things to allow you to recreate, from scratch, each individual server.
 - [ ] Destroy every secondary machine you've created and use the above profile to recreate them, joining them to the clusters as needed.
 - [ ] Bonus exercise: create three more VMs. A CentOS 7, and 8 machine. On each of these machines, set them up to allow you to create custom RPMs and import them into the Foreman-Katello server instance. Ensure your Ansible configurations work for all three and produce like-for-like behaviors.
